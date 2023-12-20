@@ -19,9 +19,6 @@ user="diconium"
 backup_sudoers() {
 cp -p ${file} ${file}_$(date +%d-%m-%y)
 }
-
-
-
  
 if [[ ${action} == "add" ]]; then
     grep -w diconium ${file}|grep -i ^# 2>&1 > /dev/null
